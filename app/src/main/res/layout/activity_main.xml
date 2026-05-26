@@ -28,4 +28,18 @@
         android:layout_marginBottom="15dp"
         android:text="Ejemplo2" />
 
+    <Button
+        android:id="@+id/btnAporB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Multiplicación A por B" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Ejemplo3" />
+
 </LinearLayout>

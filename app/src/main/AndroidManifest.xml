@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
+            android:name=".Ejemplo3.Ejemplo3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".multiplicaAporB.ResultAporBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".multiplicaAporB.AporBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ejemplo2.ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".Ejemplo2.Ejemplo2Activity"
             android:exported="false" />
         <activity
