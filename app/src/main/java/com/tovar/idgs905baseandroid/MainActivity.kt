@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.tovar.idgs905baseandroid.Ejemplo1.ejemplo1
 import com.tovar.idgs905baseandroid.Ejemplo2.Ejemplo2Activity
 import com.tovar.idgs905baseandroid.Ejemplo3.Ejemplo3Activity
+import com.tovar.idgs905baseandroid.examenResistencia.ExamenActivity
 import com.tovar.idgs905baseandroid.distanciaentredospuntos.distanciaentredospuntos
 import com.tovar.idgs905baseandroid.multiplicaAporB.AporBActivity
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val btndistanciaentredospuntos = findViewById<Button>(R.id.btn2)
         val btnAporB = findViewById<Button>(R.id.btnAporB)
         val btnEjemplo3 = findViewById<Button>(R.id.btn4)
+        val btnExamen = findViewById<Button>(R.id.btnExamen)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         btndistanciaentredospuntos.setOnClickListener { navegateTodistanciaentredospuntos() }
         btnAporB.setOnClickListener { navigateToAporB() }
         btnEjemplo3.setOnClickListener { navegateToEjemplo3() }
+        btnExamen.setOnClickListener { navegateToExamen() }
 
     }
 
@@ -59,6 +62,10 @@ class MainActivity : AppCompatActivity() {
 
     fun navegateToEjemplo3(){
         val intent = Intent(this, Ejemplo3Activity::class.java)
+        startActivity(intent)
+    }
+    fun navegateToExamen(){
+        val intent = Intent(this, ExamenActivity::class.java)
         startActivity(intent)
     }
 }
